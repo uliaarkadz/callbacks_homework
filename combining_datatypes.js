@@ -1,4 +1,4 @@
-//Combining Datatypes
+//Combine objects, arrays, and functions
 
 // Create an object, called crayonBox, that has a property that is an array. The array should have the names of some crayons. Log one of the elements of that array.
 
@@ -45,3 +45,29 @@ const apartmentBuilding = [
 ];
 
 console.log(apartmentBuilding[2][2]);
+
+// Combine objects, arrays, and functions more than one level deep
+
+// Create a function knit that returns an object that has the following kinds of properties item: scarf, size : 6ft etc. Log a value of that object (hint: call the function and then call a property on the return value).
+const knit = () => {
+  const obj = { item: "scarf", size: "6 ft", color: "grey", materia: "wool" };
+  return obj;
+};
+console.log(knit());
+
+// Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). Log one of the elements of that array.
+
+const crayonSelector = (obj) => {
+  return obj.name[1];
+};
+console.log(crayonSelector(crayonBox));
+
+// Create a function powerButton that returns a function called options - options should console.log a simple message like select a song. Call that inner function
+
+const powerButton = () => {
+  const options = () => {
+    console.log("Please select a song!");
+  };
+  options();
+};
+powerButton();
