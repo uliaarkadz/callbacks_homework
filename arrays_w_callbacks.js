@@ -235,3 +235,91 @@ let haveLetter = panagram.some((p) => {
 });
 
 console.log(haveLetter);
+
+//***********************
+// Hungry for More
+//***********************
+
+//***********************
+// Reduce
+//***********************
+
+// Add all the numbers in the array together using the reduce method
+
+const sum = nums.reduce((a, b) => {
+  return a + b;
+}, 0);
+
+console.log(sum);
+
+// concatenate all the words using reduce
+
+const concatWords = panagram.reduce((a, b) => {
+  return a + b;
+}, "");
+
+console.log(concatWords);
+
+//***********************
+// Sort
+//***********************
+
+// Try to sort without any arguments, do you get what you'd expect with the numbers array?
+
+// nums.sort();
+
+// console.log(nums);
+
+// Try to sort without any arguments, do you get what you'd expect with the words array?
+
+// panagram.sort();
+
+// console.log(panagram);
+
+// Sort the numbers in ascending order
+
+nums.sort((a, b) => {
+  return a - b;
+});
+
+console.log(nums);
+
+// Sort the numbers in descending order
+
+nums.sort((a, b) => {
+  return b - a;
+});
+
+console.log(nums);
+
+// Sort the words in ascending order
+
+panagram.sort((a, b) => {
+  return a.localeCompare(b);
+});
+
+console.log(panagram);
+
+// Sort the words in descending order
+
+panagram.sort((a, b) => {
+  return b.localeCompare(a);
+});
+
+console.log(panagram);
+
+// Array Methods Challenge Problems
+// isPanagram
+// Using the following array - test whether each letter a-z (case insensitive) is used at least once
+
+const panagram = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
