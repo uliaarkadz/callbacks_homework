@@ -442,6 +442,4 @@ console.log(productsPriceLessTen);
 
 productsPriceLessTen.sort((a, b) => a.name.localeCompare(b.name));
 
-console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-
 console.log(productsPriceLessTen);
